@@ -33,9 +33,15 @@ header {
 .header {
   display: flex;
   color: var(--white-color);
-  height: 90px;
+  height: 9rem;
   align-items: center;
   justify-content: space-between;
+}
+.icon-bar {
+  display: none;
+}
+.icon-bar svg {
+  fill: white;
 }
 .header .header__logo {
   font-size: 2.4rem;
@@ -740,4 +746,168 @@ main {
   line-height: 2.4rem;
   font-weight: 700;
   color: var(--second-text-color);
+}
+
+@media only screen and (max-width: 576px) {
+  .container {
+    padding: 5rem 1.5rem;
+  }
+  .header .header__navs,
+  .header .header__actions {
+    display: none;
+  }
+  .icon-bar {
+    display: block;
+    width: 3rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .hero-content__leftside,
+  .hero-content__rightside {
+    width: 100%;
+  }
+  .hero-leftside__title {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+  }
+  .hero-rightside__img-1 {
+    width: auto;
+  }
+  .featured-product-leftside__main-img {
+    width: auto;
+  }
+  .courses {
+    flex-direction: column;
+
+    gap: 3rem;
+  }
+  .courses__leftside,
+  .courses__rightside {
+    width: 100%;
+  }
+  .courses__rightside {
+    flex-direction: column;
+  }
+  .courses__rightside .col-2-1,
+  .courses__rightside .col-2-2 {
+    width: 100%;
+  }
+  .card {
+    width: 100%;
+  }
+  .featured-product {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .featured-product__leftside,
+  .featured-product__rightside {
+    width: 100%;
+  }
+  .featured-product__rightside {
+    justify-content: start;
+  }
+  .packages__main,
+  .feedback__main {
+    flex-direction: column;
+  }
+  .packages__main-card,
+  .feedback__card {
+    flex-basis: none;
+    width: 100%;
+  }
+  .feedback__card {
+    padding: 5rem 0;
+  }
+  .join-us__contact {
+    width: 100%;
+  }
+  .footer-top {
+    flex-direction: column;
+  }
+  .footer-top .col {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .container {
+    padding: 5rem 2.5rem;
+  }
+  .header .header__navs,
+  .header .header__actions {
+    display: none;
+  }
+  .hero-content {
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .hero-content__leftside,
+  .hero-content__rightside {
+    width: 100%;
+  }
+
+  .courses {
+    flex-direction: column;
+
+    gap: 3rem;
+  }
+  .courses__leftside,
+  .courses__rightside {
+    width: 100%;
+  }
+  .courses__rightside {
+    flex-direction: column;
+  }
+  .courses__rightside .col-2-1,
+  .courses__rightside .col-2-2 {
+    width: 100%;
+  }
+  .card {
+    width: 100%;
+  }
+  .featured-product {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .featured-product__leftside,
+  .featured-product__rightside {
+    width: 100%;
+  }
+  .featured-product__rightside {
+    justify-content: start;
+  }
+  .packages__main,
+  .feedback__main {
+    flex-direction: column;
+  }
+  .packages__main-card,
+  .feedback__card {
+    flex-basis: none;
+    width: 100%;
+  }
+  .feedback__card {
+    padding: 5rem 0;
+  }
+  .join-us__contact {
+    width: 100%;
+  }
+  .footer-top {
+    flex-direction: column;
+  }
+  .footer-top .col {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .icon-bar {
+    display: none;
+  }
 }
